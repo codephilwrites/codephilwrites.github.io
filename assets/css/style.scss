@@ -1,10 +1,11 @@
+---
+---
+
 @import "{{ site.theme }}";
 
 header {
-  display: none; !important
-
+  display: none;
 }
-
 #main_content {
   padding-top: 5%
 }
