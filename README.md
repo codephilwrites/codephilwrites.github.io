@@ -15,7 +15,7 @@ It’s also a well-intentioned effort at building some trust by being intentiona
 
 My name is Phil and I live on the edge of the New Forest on the South Coast of England. I'm married to Emma, together we have 2 cats, Maggie & Matilda. I enjoy travelling, and I love finding out new information; espcially about History. Lately, I've been learning to play piano - I'm a big lover of musical theatre 🎭 so I'm very happy to be able to start learning some songs from my favourite shows. 
 
-When it comes to sport I'm massively into the NFL 🏈 and follow the 3 time Super Bowl Champions 🏆🏆🏆 - The Kansas City Chiefs 🔴🟡. If we have any virtual meetings together you may spot subtle clues to my KC fanatacism. If you follow any other NFL team come talk to me about them and I'll tell you why you're wrong 😉. 
+When it comes to sport I'm massively into the NFL 🏈 and follow the 4 time Super Bowl Champions 🏆🏆🏆 - The Kansas City Chiefs 🔴🟡. If we have any virtual meetings together you may spot subtle clues to my KC fanatacism. If you follow any other NFL team come talk to me about them and I'll tell you why you're wrong 😉. 
 
 The [Specsavers 👓 behaviour](https://join.specsavers.com/uk/experience-specsavers/#:~:text=Our%20values%20and%20behaviours) that resonates with me the most is 🏃🏻‍♂️ _Courageous_ - because I like working with colleagues, driving change to make colleagues and customer's lives better through technology. 
 
@@ -30,6 +30,20 @@ Professionally I'm a DevOps advocate and have seen the value that employing DevO
 - I prefer to have information that is subject to change rather than leaving that information out. Otherwise I might make assumptions that are not correct.
 - I am confident in challenging things I care deeply about however respect hierarchy, so tell me when I'm challenging things not in my remit to change. 
 
+## 🧔🏻‍♂️Talk to me about 
+### 👨🏻‍💼Professionally 
+- Software Development Practices
+- DevEx/DevOps/Platform Engineering
+- Technology Transformation
+- Engineering Strategy
+- Software Delivery
+
+### 🙋🏻‍♂️Personally 
+- Musical Theatre (what's your favourite?)
+- NFL
+- Cats (expect to be shown pictures of mine)
+- The favourite place you've travelled
+  
 ## 💼 My working style
 
 - I love asking "Why?" it motivates me and helps me be effective when I understand the problem we are trying to solve 
@@ -57,19 +71,17 @@ For example I might say _I think we should go for coffee rather than tea, I'm 3/
 ## 💬 Communicating with me
 
 - My typical working hours are: 
-    - **Mon** - 07:30 - 17:00
-    - **Tue** - 07:30 - 17:00
-    - **Wed** - 08:30 - 17:30
-    - **Thu** - 07:30 - 17:00
-    - **Fri** - 08:30 - 17:00
+    - **Mon** - 08:30 - 17:00 🏠
+    - **Tue** - 07:30 - 17:00 🏢
+    - **Wed** - 08:30 - 17:30 🏢
+    - **Thu** - 07:30 - 17:00 🏢
+    - **Fri** - 08:30 - 17:00 🏠
     
 I'm okay with meeting outside my working hours but I prefer having later meetings than waking up early for one. 
-- I prefer **in person** 🤝 meetings on Mondays, Tuesdays and Thursdays as I am in the office 🏢. 
-- I prefer **virtual** 💻 meetings on Wednesday and Fridays as I am at home 🏡.
+- I prefer **in person** 🤝 meetings on Tuesdays, Wednesday and Thursdays as I am in the office 🏢. 
+- I prefer **virtual** 💻 meetings on Monday and Fridays as I am at home 🏡.
 - I much prefer using Instant Messanger over Email so please get me on Teams.
 - I may sometimes work outside normal working hours, if you get an email from me outside your standard working hours there is no expectation from me to reply immediately. 
-
-
 
 ## 💪 Strengths
 
