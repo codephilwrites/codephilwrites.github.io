@@ -1,94 +1,163 @@
-**Phil Peters (he/him) - Senior Software Development Lead**
-<hr/>
-
-This page is intended to help others understand what it might be like to work with me, especially people who haven’t worked with me before.
-
-It’s also a well-intentioned effort at building some trust by being intentionally vulnerable, and to share my ideas of a good working relationship to reduce the anxiety of people who might be on my team.
+# 👋🏻 **Phil Peters (he/him) - Senior Software Development Lead**
 
 
-## ✉ Get in Touch
 
-- Feel free to schedule a ☕ chat with me via [Outlook](https://outlook.office.com/bookwithme/user/eafc1b0f303d4c0f992efe4cb382f271@specsavers.com?anonymous&ep=plink)
-- Message me ✉ on [Teams](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&topicname=Chat)
+This is a living document that aims to reduce ambiguity, build trust, and make it easier to work with me. It’s part guide, part open door – especially useful if you’re new to working with me or if we’re trying to collaborate more deeply. I'm sharing this to be transparent, but also to make space for you to do the same.
 
-## 👨🏻‍💻 About me
+---
 
-My name is Phil and I live on the edge of the New Forest on the South Coast of England. I'm married to Emma, together we have 2 cats, Maggie & Matilda. I enjoy travelling, and I love finding out new information; espcially about History. Lately, I've been learning to play piano - I'm a big lover of musical theatre 🎭 so I'm very happy to be able to start learning some songs from my favourite shows. 
+## ✉️ How to Contact Me
+- ☕ Book [a chat in Outlook](https://outlook.office.com/bookwithme/user/eafc1b0f303d4c0f992efe4cb382f271@specsavers.com?anonymous&ep=plink) – I'm always happy to chat.
+- 💬 [Message me on Teams](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&topicname=Chat) (my preferred channel – I don’t check email as often).
+- I'm structured in how I work, but flexible when it matters.
 
-When it comes to sport I'm massively into the NFL 🏈 and follow the 4 time Super Bowl Champions 🏆🏆🏆 - The Kansas City Chiefs 🔴🟡. If we have any virtual meetings together you may spot subtle clues to my KC fanatacism. If you follow any other NFL team come talk to me about them and I'll tell you why you're wrong 😉. 
+---
 
-The [Specsavers 👓 behaviour](https://join.specsavers.com/uk/experience-specsavers/#:~:text=Our%20values%20and%20behaviours) that resonates with me the most is 🏃🏻‍♂️ _Courageous_ - because I like working with colleagues, driving change to make colleagues and customer's lives better through technology. 
+## 👨🏻‍💻 About Me
 
-Professionally I'm a DevOps advocate and have seen the value that employing DevOps methodologies and behaviours can bring. I automate everything and use code to solve solutions when it makes sense. I am always open to conversations about improving efficiencies be they personal, professional, engineering focussed or otherwise.  
+I’m Phil – a Senior Engineering Lead at Specsavers and I am based on the edge of the New Forest. I live with my wife Emma and our two cats, Maggie and Matilda. I love learning, especially about history, and I’ve recently started learning piano so I can play songs from my favourite musicals 🎭. If you want to talk about *Les Mis*, *Blood Brothers*, or anything Musicals – I’m in.
 
-## 🤝 How you can help me
+I’m also a die-hard Kansas City Chiefs fan 🔴🟡 you may spot subtle hints about this when I work from home!
 
-- I talk very fast, I try to manage this as best I can. If I say something too fast for you please just ask me to repeat myself more slowly and I'll happily do so. 
-- I value all types of feedback and I'm always eager to learn and improve myself. I prefer to receive negative feedback in a 1:1 setting. 
-- I prefer to have a meeting agenda/outline prior to the call so I know roughly what to expect. Not knowing what to expect can lead me to make assumptions which are incorrect.
-- I suffer from Tinnitus which can affect my concentration, if you see my in the office with my headphones 🎧 on please feel free to speak with me, if I'm on a call I'll let you know. I use music to manage the ringing! 
-- I prefer to have information that is subject to change rather than leaving that information out. Otherwise I might make assumptions that are not correct.
-- I am confident in challenging things I care deeply about however respect hierarchy, so tell me when I'm challenging things not in my remit to change. 
+Professionally, I advocate for *DevOps as a culture, not just a toolchain*. I’m focused on building great developer experiences, sustainable engineering practices, and enabling organisations to move fast without breaking things that matter. I care deeply about strategy, automation, and helping engineers do their best work.
 
-## 🧔🏻‍♂️Talk to me about 
-### 👨🏻‍💼Professionally 
-- Software Development Practices
-- DevEx/DevOps/Platform Engineering
-- Technology Transformation
-- Engineering Strategy
-- Software Delivery
+The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous** – not just pushing for change, but helping others feel confident to come along for the ride.
 
-### 🙋🏻‍♂️Personally 
-- Musical Theatre (what's your favourite?)
-- NFL
-- Cats (expect to be shown pictures of mine)
-- The favourite place you've travelled
-  
-## 💼 My working style
+---
 
-- I love asking "Why?" it motivates me and helps me be effective when I understand the problem we are trying to solve 
-- I prefer to know the problem rather than the solution. Even if a solution has been decided please take me on the journey to understand the problem.
-- I value simple documentation, and appreciate the effort that goes into clear communication. I work well when presented with a diagram, and I find it easier to get information from a spoken conversation than a text based format. 
-- I am really passionate about code, good practice and using technology to solve problems. 
-- I use messaging asynchronously, if I ask for something I'll try and include all the information in my message so you're empowered to respond when is convinient for you
+## 🧑🏻‍💼 What I Do & How I Think
 
-## ⚖  Scale of Conviction
-- Sometimes, I use a rating system out of 10 to communicate how strongly held I am of my opinion. 
+Right now, I’m contributing to the evolution of our engineering capability at Specsavers by shaping and supporting a long-term strategy for how we build and scale our software delivery. That includes influencing direction in areas such as:
+- **Practice** (craft, community, consistency)
+- **Value stream engineering** (optimising how we deliver end-to-end)
+- **Core engineering** (standards, tools, environments)
+- **Innovation** (time, space and sponsorship to explore ideas)
+- **Governance and metrics** (because we can’t improve what we can’t see)
 
-    - 1 - Very loosely held, offering an opinion but happy to be overruled 
-    - ... 
-    - 10 - I really care about this and will likely be unwilling to compromise 
+I care deeply about platform thinking, developer enablement, and how teams can balance autonomy with alignment. I try to zoom between strategic and tactical levels – one minute I’m talking about engineering operating models, the next I’m in the weeds of a CI/CD design.
 
-For example I might say _I think we should go for coffee rather than tea, I'm 3/10 on this_ 
+---
 
+## 🧭 My Leadership Philosophy
 
-## 🤔 What I assume about others
+My leadership style is principle-led and outcome-oriented. I believe in creating clarity, removing friction, and enabling people to do their best work. I don’t believe in micromanagement – I trust people to own their outcomes. My role is to remove blockers, ask useful questions, and help us stay aligned to our mission and values.
 
-- We both want the best, I’m a huge believer in win-win situations, and I’m willing to compromise. 
-- If something is wrong, you are comfortable to let me know. If no one says anything, I will assume you are okay with it. 
+---
 
+## 🛠 How I Make Decisions
 
-## 💬 Communicating with me
+I prioritise long-term impact over short-term wins. I tend to ask, “Is this scalable?”, “Is it aligned with strategy?”, and “Who will this affect?” I value data but will act on conviction when needed. I’ll often gut-check big calls with peers or direct reports, even if the final call sits with me.
 
-- My typical working hours are: 
-    - **Mon** - 08:30 - 17:00 🏠
-    - **Tue** - 07:30 - 17:00 🏢
-    - **Wed** - 08:30 - 17:30 🏢
-    - **Thu** - 07:30 - 17:00 🏢
-    - **Fri** - 08:30 - 17:00 🏠
-    
-I'm okay with meeting outside my working hours but I prefer having later meetings than waking up early for one. 
-- I prefer **in person** 🤝 meetings on Tuesdays, Wednesday and Thursdays as I am in the office 🏢. 
-- I prefer **virtual** 💻 meetings on Monday and Fridays as I am at home 🏡.
-- I much prefer using Instant Messanger over Email so please get me on Teams.
-- I may sometimes work outside normal working hours, if you get an email from me outside your standard working hours there is no expectation from me to reply immediately. 
+---
+
+## 🔁 How I Give and Receive Feedback
+
+- I give feedback with intent to help, not to judge.
+- I’ll praise in public but give critique in private.
+- If I don’t give feedback immediately, it’s not because I didn’t notice – I might just be choosing the right moment.
+- If I ever give feedback that feels off – tell me. I’m always learning and improving.
+
+---
+
+## 🛣 What I'm Currently Focused On
+
+- Aligning Specsavers’ engineering function to the Long-Term Framework
+- Responsibility and Accountabiliy for technical delivery of the Retail Platform
+- Accountability for technical delivery of the Clinical Platform
+- Global oversight for technical alignment of Clincal and Retail platform supporting applications 
+- Creating a DevEx strategy rooted in platform thinking
+- Establishing practices and principles to scale engineering excellence
+
+---
+
+## 💼 My Working Style
+
+- I love understanding the *why* behind the *what*. Bring me the context and I’ll help you to a solution.
+- I prefer the problem over the solution – even if you’ve already picked a path, walk me through the decision.
+- I like structured thinking but messy whiteboards – don’t be afraid to show half-formed ideas.
+- I communicate best via diagrams, metaphors, and real-world parallels (NFL analogies likely).
+- I favour asynchronous tools and clear, complete communication. I’ll try to give you everything you need in one message.
+- I default to optimism and forward momentum, but I value dissent and devil’s advocacy.
+- I sometimes use a **Conviction Scale (1–10)** ⚖️ to signal how strongly I feel about something. A “2” means I’ll go with the flow. A “9” means I care a *lot* and might be harder to sway. If I add `4/10` to a message or converstion this is me telling you how strong my conviction is. 
+
+---
+
+## 💬 Communication Preferences
+
+- 🕒 My, typical, core working hours are:
+  - **Mon**: 07:30 – 17:00 (Forum 5)🏢
+  - **Tue**: 07:30 – 17:00 (Forum 5)🏢
+  - **Wed**: 08:30 – 17:30 (Forum 5)🏢
+  - **Thu**: 07:30 – 17:00 (Forum 5)🏢
+  - **Fri**: 09:00 – 16:30 (Remote)🏠
+
+- 📍 I prefer:
+  - In-person meetings on Mon–Thu
+  - Virtual meetings on Fri
+  - Teams over email 
+  - Late meetings over early ones
+- ✈️ Once a month I work from La Villiaze, on Guernsey. Ask me when I'm next there and we can schedule some time. 
+
+- 📧 If I message outside your hours, I don’t expect a response until you’re back online. I respect your boundaries and assume you’ll respect mine.
+
+---
+
+## 🔄 Working With Me When…
+
+- **When I’m deep in strategy work**: I may be slower to respond in chat. A nudge is totally fine.
+- **When something’s on fire**: I move quickly and may be more direct than usual. It’s not personal – just focus mode.
+- **When I’m quiet**: I’m either thinking or processing something – feel free to check in.
+
+---
+
+## 🤝 How You Can Help Me
+
+- I talk fast. If you need me to slow down or repeat something, just say so.
+- I prefer feedback directly, and if it’s negative, a 1:1 is best.
+- I appreciate agendas – uncertainty breeds assumptions.
+- I live with tinnitus and often use music to help me focus. If I’m wearing headphones, tap me – I’ll let you know if I’m on a call.
+- I’d rather know something that *might* change than not know it at all. I work better when I have the full picture, even if it’s messy.
+- I challenge things I care about, but I value hierarchy. Let me know if I’m stepping outside my lane – I’ll appreciate the redirect.
+
+---
+
+## 🧠 What I Assume About Others
+
+- We both want to make things better – and we’ll get further by working together.
+- You’ll let me know if something’s off – silence = consent in my book, so challenge me if needed.
+- You have good intent, even if your message lands awkwardly – I’ll try to offer the same grace.
+
+---
 
 ## 💪 Strengths
 
-- I have quite a vivid imagination that allows me to think of interesting solutions to complex problems
-- I consider myself easy going and easy to communicate with, I'm always happy to have a chat and undertstand your point of view before offering my own
+- I’ve got a vivid imagination – good for innovation, bad for sticking to PowerPoint templates.
+- I’m a connector – I love cross-pollinating ideas across teams and disciplines.
+- I bring clarity and structure to chaos, but I’m happy operating in ambiguity to find a clarity.
+- I can articulate a vision *and* help people rally around it.
 
+---
 
 ## 👎 Weaknesses
 
-- Sometimes my passion can leave me blind to the problem we're trying to solve. If you see this affecting my work please do tell me
+- I can become so passionate about a direction that I forget to revalidate the destination. Nudge me if that happens.
+- I sometimes fixate on “the better way” at the cost of “the good enough for now”.
+- I dislike inefficiency so much that I occasionally jump ahead of a process. Call me out if that affects team alignment.
+
+---
+
+## 🧔🏻‍♂️ Talk to Me About
+
+### 👨🏻‍💼 Professionally:
+- DevOps, Platform Engineering, and Developer Enablement  
+- Engineering Leadership and Transformation  
+- Engineering Strategy and Operating Models  
+- Software Delivery and Continuous Improvement  
+- Anything in the “DevOps x Org Design” space  
+
+### 🙋🏻‍♂️ Personally:
+- Musical Theatre (favourite scores, underrated shows, or dream roles)  
+- NFL – especially if you're brave enough to support another team  
+- Cats – Maggie and Matilda love the attention  
+- Travel – tell me your favourite destination, I’ll tell you mine  
+
