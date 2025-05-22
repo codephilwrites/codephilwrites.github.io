@@ -1,4 +1,4 @@
-# 👋🏻 **Phil Peters (he/him) - Senior Software Development Lead**
+# 👋🏻 **Phil Peters (he/him) - Principal Software Engineer**
 
 
 
@@ -6,23 +6,30 @@ This is a living document that aims to reduce ambiguity, build trust, and make i
 
 ---
 
+## 👨🏻‍💻 About Me
+
+I’m Phil – a Principal Software Engineer and I am based on the edge of the New Forest. I live with my wife Emma and our two cats, Maggie and Matilda. I love learning, especially about history, and I’ve recently started learning piano so I can play songs from my favourite musicals 🎭. If you want to talk about *Les Mis*, *Blood Brothers*, or anything Musicals – I’m in.
+
+I’m also a die-hard Kansas City Chiefs fan 🔴🟡 you may spot subtle hints about this when I work from home!
+
+Professionally, I advocate for *DevOps as a culture, not just a toolchain*. I’m focused on building great developer experiences, sustainable engineering practices, and enabling organisations to move fast without breaking things that matter. I care deeply about strategy, automation, and helping engineers do their best work. My current focus at work is technical delivery and support of our Retail Value Stream, Software Engineering oversight of Transition States 1 & 2 of the Blended Experience Programme and Global Software Engineering governance. 
+
+The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous** – not just pushing for change, but helping others feel confident to come along for the ride.
+
+
+---
+
 ## ✉️ How to Contact Me
 - ☕ Book [a chat in Outlook](https://outlook.office.com/bookwithme/user/eafc1b0f303d4c0f992efe4cb382f271@specsavers.com?anonymous&ep=plink) – I'm always happy to chat.
 - 💬 [Message me on Teams](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&topicname=Chat) (my preferred channel – I don’t check email as often).
 - I'm structured in how I work, but flexible when it matters.
-
----
-
-## 👨🏻‍💻 About Me
-
-I’m Phil – a Senior Engineering Lead at Specsavers and I am based on the edge of the New Forest. I live with my wife Emma and our two cats, Maggie and Matilda. I love learning, especially about history, and I’ve recently started learning piano so I can play songs from my favourite musicals 🎭. If you want to talk about *Les Mis*, *Blood Brothers*, or anything Musicals – I’m in.
-
-I’m also a die-hard Kansas City Chiefs fan 🔴🟡 you may spot subtle hints about this when I work from home!
-
-Professionally, I advocate for *DevOps as a culture, not just a toolchain*. I’m focused on building great developer experiences, sustainable engineering practices, and enabling organisations to move fast without breaking things that matter. I care deeply about strategy, automation, and helping engineers do their best work.
-
-The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous** – not just pushing for change, but helping others feel confident to come along for the ride.
-
+### 🔠 Acronyms I tend to use in chat
+_What do I do with all the time I save you ask?_ - I create more acronyms...
+- LGTM - Looks good to me
+- YMMV - Your mileage may vary (outcomes can vary depending on circumstances, personal preferences, or luck)
+- AFAIK - As far as I know
+- IIRC - If I remember correctly
+- EGF - Engineering Governance Framework (a Specsavers term) 
 ---
 
 ## 🧑🏻‍💼 What I Do & How I Think
@@ -159,5 +166,7 @@ I prioritise long-term impact over short-term wins. I tend to ask, “Is this sc
 - Musical Theatre (favourite scores, underrated shows, or dream roles)  
 - NFL – especially if you're brave enough to support another team  
 - Cats – Maggie and Matilda love the attention  
-- Travel – tell me your favourite destination, I’ll tell you mine  
+- Travel – tell me your favourite destination, I’ll tell you mine
+
+
 
