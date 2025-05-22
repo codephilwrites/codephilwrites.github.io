@@ -23,6 +23,7 @@ The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous*
 - ☕ Book [a chat in Outlook](https://outlook.office.com/bookwithme/user/eafc1b0f303d4c0f992efe4cb382f271@specsavers.com?anonymous&ep=plink) – I'm always happy to chat.
 - 💬 [Message me on Teams](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&topicname=Chat) (my preferred channel – I don’t check email as often).
 - I'm structured in how I work, but flexible when it matters.
+
 ### 🔠 Acronyms I tend to use in chat
 _What do I do with all the time I save you ask?_ - I create more acronyms...
 - LGTM - Looks good to me
