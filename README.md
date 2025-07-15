@@ -1,8 +1,10 @@
 # 👋🏻 **Phil Peters (he/him) - Principal Software Engineer**
+<sub><sup> Last Updated: 15/07/2025 </sub></sup>
 
 
 
 This is a living document that aims to reduce ambiguity, build trust, and make it easier to work with me. It’s part guide, part open door – especially useful if you’re new to working with me or if we’re trying to collaborate more deeply. I'm sharing this to be transparent, but also to make space for you to do the same.
+
 
 ---
 
@@ -18,8 +20,27 @@ The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous*
 
 
 ---
+## 💬 Communication Preferences
 
-## ✉️ How to Contact Me
+- 🕒 My, typical, core working hours are:
+  - **Mon**: 07:30 – 17:00 (Forum 5)🏢
+  - **Tue**: 07:30 – 17:00 (Forum 5)🏢
+  - **Wed**: 08:30 – 17:30 (Forum 5)🏢
+  - **Thu**: 07:30 – 17:00 (Forum 5)🏢
+  - **Fri**: 09:00 – 16:30 (Remote)🏠
+
+- 📍 I prefer:
+  - In-person meetings on Mon–Thu
+  - Virtual meetings on Fri
+  - Teams over email 
+  - Late meetings over early ones
+- ✈️ Once a month (between March-September) I work from the La Villiaze office, in Guernsey. Ask me when I'm next there and we can schedule some time. 
+
+- 📧 If I message outside your hours, I don’t expect a response until you’re back online. I respect your boundaries and assume you’ll respect mine.
+- 🕕 My Teams and Outlook Notifications automatically disable during my non-working hours. You are free to message me anytime that works for you, I commit to responding within working hours. 
+
+
+### ✉️ How to Contact Me
 - ☕ Book [a chat in Outlook](https://outlook.office.com/bookwithme/user/eafc1b0f303d4c0f992efe4cb382f271@specsavers.com?anonymous&ep=plink) – I'm always happy to chat.
 - 💬 [Message me on Teams](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&topicname=Chat) (my preferred channel – I don’t check email as often).
 - I'm structured in how I work, but flexible when it matters.
@@ -30,7 +51,9 @@ _What do I do with all the time I save you ask?_ - I create more acronyms...
 - YMMV - Your mileage may vary (outcomes can vary depending on circumstances, personal preferences, or luck)
 - AFAIK - As far as I know
 - IIRC - If I remember correctly
-- EGF - Engineering Governance Framework (a Specsavers term) 
+- EGF - Engineering Governance Framework (a Specsavers term)
+- JSYK - Just So You Know
+- AFK - Away From Keyboard
 ---
 
 ## 🧑🏻‍💼 What I Do & How I Think
@@ -86,29 +109,14 @@ I prioritise long-term impact over short-term wins. I tend to ask, “Is this sc
 - I communicate best via diagrams, metaphors, and real-world parallels (NFL analogies likely).
 - I favour asynchronous tools and clear, complete communication. I’ll try to give you everything you need in one message.
 - I default to optimism and forward momentum, but I value dissent and devil’s advocacy.
-- I sometimes use a **Conviction Scale (1–10)** ⚖️ to signal how strongly I feel about something. A “2” means I’ll go with the flow. A “9” means I care a *lot* and might be harder to sway. If I add `4/10` to a message or converstion this is me telling you how strong my conviction is. 
+
+### ⚖️ Strength of Feeling Scale   
+
+I sometimes use a **Strength of Feeling Scale Scale (1–10)** ⚖️ to signal how strongly I feel about something. A “2” means I’ll go with the flow. A “9” means I care a *lot* and might be harder to sway. If I add `4/10` to a message or converstion this is me telling you how strong my conviction is. 
 
 ---
 
-## 💬 Communication Preferences
 
-- 🕒 My, typical, core working hours are:
-  - **Mon**: 07:30 – 17:00 (Forum 5)🏢
-  - **Tue**: 07:30 – 17:00 (Forum 5)🏢
-  - **Wed**: 08:30 – 17:30 (Forum 5)🏢
-  - **Thu**: 07:30 – 17:00 (Forum 5)🏢
-  - **Fri**: 09:00 – 16:30 (Remote)🏠
-
-- 📍 I prefer:
-  - In-person meetings on Mon–Thu
-  - Virtual meetings on Fri
-  - Teams over email 
-  - Late meetings over early ones
-- ✈️ Once a month I work from La Villiaze, on Guernsey. Ask me when I'm next there and we can schedule some time. 
-
-- 📧 If I message outside your hours, I don’t expect a response until you’re back online. I respect your boundaries and assume you’ll respect mine.
-
----
 
 ## 🔄 Working With Me When…
 
