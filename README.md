@@ -54,6 +54,7 @@ _What do I do with all the time I save you ask?_ - I create more acronyms...
 - EGF - Engineering Governance Framework (a Specsavers term)
 - JSYK - Just So You Know
 - AFK - Away From Keyboard
+
 ---
 
 ## 🧑🏻‍💼 What I Do & How I Think
