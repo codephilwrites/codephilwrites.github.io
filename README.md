@@ -1,5 +1,5 @@
 # 👋🏻 **Phil Peters (he/him) - Principal Software Engineer**
-<sub><sup> Last Updated: 15/07/2025 </sub></sup>
+<sub><sup> Last Updated: 15/07/2025 </sup></sub>
 
 
 
