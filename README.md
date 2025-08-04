@@ -34,7 +34,6 @@ The Specsavers behaviour I most identify with is **🏃🏻‍♂️ Courageous*
   - Teams over email 
   - Late meetings over early ones
 - ✈️ Once a month (between March-September) I work from the La Villiaze office, in Guernsey. [Ask me when I'm next there and we can schedule some time](https://teams.microsoft.com/l/chat/0/0?users=phil.peters@specsavers.com&message=Hi%20Phil,%20when%20are%20you%20next%20in%20La%20Villiaze?). 
-
 - 📧 If I message outside your hours, I don’t expect a response until you’re back online. I respect your boundaries and assume you’ll respect mine.
 - 🕕 My Teams and Outlook Notifications automatically disable during my non-working hours. You are free to message me anytime that works for you, I commit to responding within working hours. 
 
@@ -58,7 +57,7 @@ _What do I do with all the time I save you ask?_ - I create more acronyms...
 ---
 
 ## 🧑🏻‍💼 What I Do & How I Think
-My role is to grow and scale our internal engineering capability - building both the strategy and the environment that enables our people to deliver great software, while also defining how we effectively partner with vendors,and independant 3rd-parties, to complement and extend our delivery model.
+My role is to grow and scale our internal engineering capability - building both the strategy and the environment that enables our people to deliver great software, while also defining how we effectively partner with vendors, and independant 3rd-parties, to complement and extend our delivery model.
 
 Right now, I’m contributing to the evolution of our engineering capability at Specsavers by shaping and supporting a long-term strategy for how we build and scale our software delivery. That includes influencing direction in areas such as:
 - **Practice** (craft, community, consistency)
