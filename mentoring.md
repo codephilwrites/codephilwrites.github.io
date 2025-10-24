@@ -2,6 +2,8 @@
 <sub><sup> Last Updated: 01/09/2025 </sup></sub>
 
 This is a living document that aims to reduce ambiguity, build trust, and make it easier to work with me. It’s part guide, part open door - especially useful if you’re new to working with me or if we’re trying to collaborate more deeply. I'm sharing this to be transparent, but also to make space for you to do the same.    
+
+
 ---
 
 Hi! 
