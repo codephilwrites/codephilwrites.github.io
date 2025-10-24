@@ -1,3 +1,5 @@
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ebecb7ba-0b48-450d-aea9-8b647fa349e5"></script>
+
 # 👋🏻 **Phil Peters (he/him) - Mentor**
 <sub><sup> Last Updated: 01/09/2025 </sup></sub>
 
