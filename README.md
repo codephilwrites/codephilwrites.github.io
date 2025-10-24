@@ -1,5 +1,6 @@
 # 👋🏻 **Phil Peters (he/him) - Head of Software Engineering**
 <sub><sup> Last Updated: 04/08/2025 </sup></sub>
+<img src="https://cloud.umami.is/api/send?website=ebecb7ba-0b48-450d-aea9-8b647fa349e5&url={{ page.url | absolute_url }}" alt="" width="1" height="1" style="display:none;">
 
 This is a living document that aims to reduce ambiguity, build trust, and make it easier to work with me. It’s part guide, part open door - especially useful if you’re new to working with me or if we’re trying to collaborate more deeply. I'm sharing this to be transparent, but also to make space for you to do the same.
 
