@@ -53,6 +53,7 @@ _What do I do with all the time I save you ask?_ - I create more acronyms...
 - JSYK - Just So You Know
 - AFK - Away From Keyboard
 - FWIW - For What It's Worth
+- ELI5 - Explain Like I'm Five (dumb it down for me)
 
 ---
 
