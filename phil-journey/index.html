@@ -1,0 +1,78 @@
+---
+layout: phil-journey
+title: Phil's Journey
+permalink: /phil-journey/
+---
+
+<div class="journey-shell">
+  <div class="game-shell" id="game-shell">
+    <canvas id="journey-canvas" width="1280" height="720" aria-label="Phil's Journey interactive story"></canvas>
+
+    <div id="start-overlay" class="overlay visible" aria-live="polite">
+      <div class="title-card">
+        <div class="pixel-tag">PHIL'S JOURNEY</div>
+        <h1>PHIL’S JOURNEY</h1>
+        <p class="subtitle">An interactive journey through the things that made me the engineer and leader I am today.</p>
+        <button class="primary-btn" data-action="start">[ START JOURNEY ]</button>
+        <button class="secondary-btn" data-action="timeline">View journey as timeline</button>
+        <div class="controls-hint">← → Move    ↑ Jump    SPACE Explore</div>
+      </div>
+    </div>
+
+    <div id="story-dialog" class="story-dialog hidden" aria-live="polite" aria-modal="true" role="dialog">
+      <div class="dialog-card">
+        <div id="dialog-title" class="dialog-title">Title</div>
+        <div id="dialog-subtitle" class="dialog-subtitle">Subtitle</div>
+        <div id="dialog-body" class="dialog-body"></div>
+        <ul id="dialog-highlights" class="dialog-highlights"></ul>
+        <button id="dialog-continue" class="primary-btn">[ Continue ]</button>
+      </div>
+    </div>
+
+    <div id="end-overlay" class="overlay hidden" aria-live="polite">
+      <div class="title-card end-card">
+        <div class="pixel-tag">THE NEXT LEVEL</div>
+        <h2>“THE NEXT LEVEL”</h2>
+        <p class="subtitle">The interesting part isn’t where we’ve been.<br>It’s what we build next.</p>
+        <div class="end-actions">
+          <button class="primary-btn" data-action="restart">[ Explore Again ]</button>
+          <button class="secondary-btn" data-action="resume-site">[ Continue Presentation ]</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="hud" class="hud hidden">
+      <div class="hud-bar">
+        <span class="hud-label">Journey</span>
+        <div class="progress-track">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-text" class="hud-value">0%</span>
+      </div>
+    </div>
+
+    <div id="touch-controls" class="touch-controls hidden" aria-label="Touch controls">
+      <div class="touch-cluster left-cluster">
+        <button aria-label="Move left" data-touch="left">◀</button>
+        <button aria-label="Move right" data-touch="right">▶</button>
+      </div>
+      <div class="touch-cluster action-cluster">
+        <button aria-label="Jump" data-touch="jump">▲</button>
+        <button aria-label="Explore" data-touch="interact">[ ]</button>
+      </div>
+    </div>
+
+    <div id="top-bar" class="top-bar">
+      <button class="top-bar-btn" data-action="fullscreen" aria-label="Toggle presentation fullscreen">Fullscreen</button>
+      <button class="top-bar-btn" data-action="sound" aria-label="Toggle sound">Sound: Off</button>
+      <button class="top-bar-btn" data-action="timeline" aria-label="View journey as timeline">Timeline</button>
+      <button class="top-bar-btn" data-action="restart" aria-label="Restart the journey">Restart</button>
+    </div>
+
+    <div id="timeline-panel" class="timeline-panel hidden" aria-live="polite"></div>
+  </div>
+</div>
+
+<script>
+  window.PHIL_JOURNEY_BASE = "{{ site.baseurl | default: '' }}";
+</script>
