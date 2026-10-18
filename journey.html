@@ -1,0 +1,41 @@
+---
+layout: journey
+title: Phil's Journey
+permalink: /journey/
+---
+<a class="skip" href="#timeline">Skip to the story timeline</a>
+<main id="experience">
+  <header class="toolbar">
+    <a class="wordmark" href="{{ '/' | relative_url }}">PHIL PETERS <span>/ A PLAYABLE INTRODUCTION</span></a>
+    <nav aria-label="Journey controls">
+      <button id="previous-section" aria-label="Previous section, left bracket key" title="Previous section [">◀</button>
+      <select id="section-jump" aria-label="Jump to a section"></select>
+      <button id="next-section" aria-label="Next section, right bracket key" title="Next section ]">▶</button>
+      <button id="timeline-toggle">View journey as timeline</button>
+      <button id="sound" aria-pressed="false">Sound off</button>
+      <button id="restart">Restart</button>
+      <button id="fullscreen" aria-pressed="false">⛶ Present</button>
+    </nav>
+  </header>
+  <section id="game" aria-label="Phil's interactive journey">
+    <canvas data-assets-base="{{ '/assets/journey/' | relative_url }}" id="world" tabindex="0" aria-label="Side-scrolling journey. Left and right arrows move. Space jumps. Up and down climb ladders; up also jumps away from ladders. Gold round coins reveal the main story; blue star diamonds reveal optional extras. Bracket keys change section; Home and End jump to the first and last. Use the timeline for a text alternative."></canvas>
+    <div class="hud"><span id="chapter">01 / EDUCATION</span><span id="progress-label">A FEW STEPS. A WHOLE JOURNEY.</span></div>
+    <div class="progress" role="progressbar" aria-label="Journey progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="progress"></i></div>
+    <div id="title-screen" class="screen">
+      <div class="title-content"><p class="eyebrow">COLLECT THE COINS. DISCOVER THE STORY.</p><h1>PHIL'S<br><span>JOURNEY</span></h1>
+      <p class="intro">An interactive journey through the things that made me the engineer and leader I am today.</p>
+      <button id="start" class="primary">START JOURNEY <span>→</span></button>
+      <p class="instructions keyboard">← → Move &nbsp; SPACE Jump &nbsp; ↑ ↓ Climb &nbsp; [ ] Sections</p><p class="instructions touch-hint">Use the on-screen arrows to explore. Tap ⤒ to jump. Hold ↑ or ↓ beside a ladder to climb. Touch gold coins to reveal the story. Jump for the floating ones.</p>
+      <p class="coin-key"><span>● Gold: main story</span> &nbsp; <span>◆ Blue: optional extras</span></p>
+      <a href="#timeline" id="title-timeline">Prefer to read? View the timeline ↓</a></div>
+      <span class="title-note">A LITTLE ADVENTURE. REAL EXPERIENCES.</span>
+    </div>
+    <aside id="story-bubble" class="story-bubble" hidden aria-label="Story discovery" aria-live="polite" aria-atomic="true"><p id="bubble-location" class="bubble-location"></p><h2 id="bubble-title" class="bubble-title"></h2><p id="bubble-body" class="bubble-body"></p></aside>
+    <div class="touch-controls" aria-label="Touch game controls"><div><button data-control="ArrowLeft" aria-label="Move left">←</button><button data-control="ArrowRight" aria-label="Move right">→</button></div><div><button data-control="ArrowUp" aria-label="Climb up">↑</button><button data-control="ArrowDown" aria-label="Climb down">↓</button><button data-control="Jump" aria-label="Jump">⤒</button></div></div>
+    <div class="game-footer"><span>GOLD: MAIN STORY · BLUE ★: OPTIONAL EXTRAS</span><span class="keyboard">← → MOVE &nbsp; SPACE JUMP &nbsp; ↑ ↓ CLIMB</span></div>
+  </section>
+  <section id="timeline" hidden aria-labelledby="timeline-title"><div class="timeline-heading"><p class="eyebrow">THE SAME STORY, AT YOUR PACE</p><h1 id="timeline-title">Phil's journey</h1><p>From helping people learn to helping engineers succeed.</p><button id="back-game">Back to the world ↑</button></div><div id="timeline-content"></div><a href="{{ '/' | relative_url }}">Continue to Phil's website →</a></section>
+  <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+  <dialog id="story-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-counter"></span><button id="close-dialog" aria-label="Close story">×</button></div><p id="dialog-title" class="eyebrow"></p><h2 id="dialog-subtitle"></h2><p id="dialog-body"></p><p id="ending-summary"></p><ul id="dialog-highlights"></ul><div class="dialog-actions"><button id="continue" class="primary">Continue →</button><a id="website" hidden href="{{ '/' | relative_url }}">Continue Presentation →</a></div></dialog>
+</main>
+<noscript><p class="no-js">This little world needs JavaScript. <a href="{{ '/' | relative_url }}">Read about Phil on the main website.</a></p></noscript>

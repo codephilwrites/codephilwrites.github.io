@@ -7,6 +7,8 @@ This is a living document that aims to reduce ambiguity, build trust, and make i
 
 ---
 
+[▶ Play Phil’s Journey — an interactive introduction](journey/)
+
 ## 👨🏻‍💻 About Me
 
 I’m Phil - Head of Software Engineering and I am based on the edge of the New Forest. I live with my wife Emma and our two cats, Maggie and Matilda. I love learning, especially about history, and I’ve recently started learning piano so I can play songs from my favourite musicals 🎭. If you want to talk about *Les Mis*, *Blood Brothers*, or anything Musicals - I’m in.
