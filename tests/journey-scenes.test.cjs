@@ -29,9 +29,10 @@ for(const stop of world.sections){
   if(stop.event.type!=='finale'){assert.equal(people,firstPerson,'Main sections draw no additional people');if(stop.event.type==='simplify'){const cloudLabels=labels.slice(firstLabel);for(const name of ['YOUR DEVICE','MICROSOFT','AZURE CLOUD','APPS','DATA','SERVICES'])assert.ok(cloudLabels.includes(name));assert.ok(cloudLabels.includes('SIMPLER · RELIABLE · COST-AWARE'));}else assert.equal(labels.length,firstLabel,'Other main sections draw no floating captions');}
 }
 assert.equal(scenes.encountered.size,world.sections.length);
-assert.ok(labels.includes('TOGETHER, WHAT NEXT?'));
+for(const name of ['Teacher','Engineer','Team Builder','Leader'])assert.ok(labels.includes(name));
+assert.equal(labels.includes('Customer'),false);assert.equal(labels.includes('Software'),false);
 assert.ok(labels.includes('Teacher'));
-assert.ok(people>0,'Callback ending keeps its cast');
+assert.equal(people,4,'Ending has four fixed career identities');
 assert.notEqual(scenes.paletteAt(world.sections[0].x).sky,scenes.paletteAt(world.sections[1].x).sky);
 for(let x=0;x<world.worldWidth;x+=25){
   const palette=scenes.paletteAt(x);

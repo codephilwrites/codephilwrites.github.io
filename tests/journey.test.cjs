@@ -33,7 +33,7 @@ const document=new Element('document');
 document.getElementById=get;document.querySelector=value=>get(value);document.querySelectorAll=()=>controls;document.createElement=()=>new Element();document.body=new Element('body');document.documentElement=new Element('html');
 let canvasTrace=null;
 const context=new Proxy({}, {get:(_target,key)=>key==='createLinearGradient'?()=>({addColorStop(){}}):(...args)=>{if(canvasTrace)canvasTrace.push({key,args});},set:()=>true});
-get('world').getContext=()=>context;get('story-bubble').hidden=true;
+get('world').getContext=()=>context;get('story-bubble').hidden=true;get('ending-link').hidden=true;
 let raf;
 const window=new Element('window');
 const sandbox={window,document,console,matchMedia:()=>({matches:!!process.env.JOURNEY_REDUCED_MOTION}),ResizeObserver:class{observe(){}},requestAnimationFrame:callback=>{raf=callback;}};
@@ -46,7 +46,7 @@ vm.runInContext(fs.readFileSync('assets/journey/cats.js','utf8'),sandbox);
 // Observe physics in tests without exposing debug controls in the shipped game.
 const engine=fs.readFileSync('assets/journey/game.js','utf8').replace(
   '  resize();requestAnimationFrame(loop);',
-  '  window.testState={player,platforms,coins,effects,discoveries,visited,scenes,cats,engineers,get emma(){return emma;}};resize();requestAnimationFrame(loop);'
+  '  window.testState={player,platforms,coins,effects,discoveries,visited,scenes,cats,engineers,get emma(){return emma;},get endingReached(){return endingReached;}};resize();requestAnimationFrame(loop);'
 );
 vm.runInContext(engine,sandbox);
 let timestamp=0;
@@ -135,6 +135,13 @@ for(const coin of state.coins){
   assert.equal(get('game').style['--story-space'],reservedSpace);
   assert.ok(get('bubble-body').textContent.length<=180);
 }
+assert.equal(state.endingReached,true,'The final bubble arrives at the fifth position');
+assert.equal(state.player.x,window.JOURNEY_WORLD.finishX);
+assert.equal(get('ending-link').hidden,false);assert.equal(get('story-dialog').open,false,'Ending keeps the scene visible');
+assert.equal(get('bubble-title').textContent,state.coins.at(-1).beat.title);
+key('keydown','ArrowRight');frames(20);key('keyup','ArrowRight');
+assert.equal(state.player.x,window.JOURNEY_WORLD.finishX,'Held movement cannot overshoot the lineup');
+key('keydown','Home');assert.equal(get('ending-link').hidden,true);assert.equal(state.endingReached,false);
 assert.equal(state.engineers.size,1,'Leadership coin summons one crew');
 frames(200);
 assert.ok([...state.engineers.values()][0].every(engineer=>engineer.ready),'Engineers run all the way to their lights');
@@ -171,8 +178,8 @@ walkTo(ladder.x+35);key('keydown','ArrowUp');frames(40);key('keyup','ArrowUp');
 key('keydown','ArrowDown');frames(8);key('keyup','ArrowDown');
 const hangingY=state.player.y;frames(10);assert.equal(state.player.y,hangingY);
 key('keydown','ArrowDown');frames(30);key('keyup','ArrowDown');assert.equal(state.player.y,450);
-walkTo(window.JOURNEY_WORLD.finishX+15);assert.equal(get('story-dialog').open,true);
-assert.equal(get('website').hidden,false);get('continue').onclick();
+walkTo(window.JOURNEY_WORLD.finishX);key('keydown','ArrowRight');frames(2);key('keyup','ArrowRight');assert.equal(state.endingReached,true);
+assert.equal(get('ending-link').hidden,false);get('restart').onclick();
 assert.equal(get('title-screen').hidden,false);assert.equal(state.discoveries.size,0);
 assert.equal(state.effects.size,0);assert.equal(get('story-bubble').hidden,true);
 assert.ok([...state.scenes.states.values()].every(state=>!state.active&&state.progress===0));
@@ -193,7 +200,8 @@ controls[1].dispatch('pointerdown',{pointerId:4});window.dispatch('blur');
 const blurX=state.player.x;frames(5);assert.equal(state.player.x,blurX);
 get('restart').onclick();get('start').onclick();frame();
 key('keydown','ArrowRight');let groundBudget=2500;
-while(!get('story-dialog').open&&groundBudget--){frame();assert.equal(state.player.y,450);}
+while(!state.endingReached&&groundBudget--){frame();assert.equal(state.player.y,450);}
 key('keyup','ArrowRight');assert.ok(groundBudget>0,'Ending remains reachable without collecting every coin');
-get('continue').onclick();
+assert.equal(get('ending-link').hidden,false);assert.equal(get('story-bubble').hidden,false);
+get('restart').onclick();
 (async()=>{await get('fullscreen').onclick();assert.equal(get('fullscreen').attributes['aria-pressed'],'true');await get('fullscreen').onclick();assert.equal(get('fullscreen').attributes['aria-pressed'],'false');console.log('PASS: all configured coins/platforms, automatic messages, stable camera, real jump pickups, ending, restart, timeline, cat greeting/petting/reset, event reset, presenter jumps, touch controls and fullscreen fallback.');})();

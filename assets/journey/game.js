@@ -28,7 +28,7 @@
   let bubbleTier = 0, celebration = 0;
   let camera=0, cameraY=170, width=640, height=360, running=false, timeline=false;
   let previous=0, time=0, sound=false, audio=null, active=null, lastArea=-1;
-  let presentation=false;
+  let presentation=false,endingReached=false;
   let emma=null;
   const engineers=new Map();
   function approachActors(dt){
@@ -368,7 +368,6 @@
         rect(piano-65,y-149,130,5,'#a67b5b');
         break;
       case 'horizon':
-        for(let j=0;j<3;j++){rect(x+275+j*46,y-45,28,7,'#eab774');rect(x+285+j*46,y-55,8,30,'#eab774');}
         break;
     }
   }
@@ -393,6 +392,22 @@
     for(const animal of cats.animals)if(visible(animal.x))cat(animal.x,GROUND,animal.black,animal.facing,animal.running);
     if(cats.petting)strokeCats(player.x,player.y,cats.facing);
     else person(player.x,player.y,player.facing,player.moving,'#235d9c',0,!player.grounded||player.climbing,playerOutfit());
+  }
+
+  function finishJourney(){
+    endingReached=true;clearInput();player.x=world.finishX;player.y=GROUND;player.vy=0;player.grounded=true;player.facing=1;
+    visited.add('ending');visited.add(story.at(-1).id);
+    const finalCoin=coins.findLast(c=>c.stop===story.at(-1));
+    if(discoveries.has(finalCoin.id))showBubble(finalCoin);else collectCoin(finalCoin);
+    $('ending-link').hidden=false;$('status').textContent='Journey complete. Read more about Phil using the More about me link.';beep('end');
+  }
+  function positionEndingLink(){
+    if(!endingReached)return;
+    const bounds=canvas.getBoundingClientRect();
+    const x=(player.x-camera+42)/width*bounds.width;
+    const y=(GROUND-cameraY-24)/height*bounds.height;
+    game.style.setProperty('--ending-link-x',x+'px');
+    game.style.setProperty('--ending-link-y',y+'px');
   }
 
   function drawRoutes() {
@@ -427,7 +442,7 @@
 
   function drawCoins() {
     for(const coin of coins){
-      if(discoveries.has(coin.id)||coin.x<camera-30||coin.x>camera+width+30)continue;
+      if(coin.ending||discoveries.has(coin.id)||coin.x<camera-30||coin.x>camera+width+30)continue;
       const bob=reduced.matches?0:Math.sin(time*2.4+coin.x)*2;
       const x=coin.x,y=coin.y+bob;
       if(coin.tier){
@@ -513,7 +528,7 @@
     }else{
       // Holding still on a ladder is safe; horizontal movement releases it.
       const hanging=ladder&&direction===0&&!supported()&&player.vy===0&&jumpBuffer===0;
-      if(direction){player.facing=direction;player.x=clamp(player.x+direction*265*dt,world.spawnX,WORLD-110);}
+      if(direction){player.facing=direction;player.x=clamp(player.x+direction*265*dt,world.spawnX,world.finishX);}
       if(jumpBuffer>0&&(coyote>0||ladder)){
         player.vy=-570;player.grounded=false;player.climbing=false;jumpBuffer=0;coyote=0;beep('jump');
       }
@@ -527,7 +542,7 @@
       }
     }
     for(const coin of coins){
-      if(Math.abs(player.x-coin.x)<27&&Math.abs(player.y-24-coin.y)<34)collectCoin(coin);
+      if(!coin.ending&&Math.abs(player.x-coin.x)<27&&Math.abs(player.y-24-coin.y)<34)collectCoin(coin);
     }
   }
   function draw() {
@@ -568,13 +583,16 @@
     drawActors();
     drawCoins();
     for(const spark of sparks)rect(spark.x,spark.y,4,4,spark.color);
+    if(endingReached){softRect(player.x-24,GROUND-92,48,20,4,'#243c50');text(world.ending?.playerName||'Phil',player.x,GROUND-78,12,'#fff6db','center');}
+    positionEndingLink();
     for(let j=Math.floor(camera/170);j<(camera+width)/170+1;j++){const fx=j*170;rect(fx,GROUND+115,4,20,'#78a085');rect(fx-7,GROUND+120,18,4,'#78a085');}
     ctx.restore();
   }
   function update(dt) {
     if(!running||timeline||dialog.open) return;
     const direction=(keys.has('ArrowRight')?1:0)-(keys.has('ArrowLeft')?1:0);
-    movePlayer(dt,direction);
+    if(!endingReached)movePlayer(dt,direction);
+    if(!endingReached&&player.x>=world.finishX&&player.grounded)finishJourney();
     approachActors(dt);
     cats.update(player,dt,emma?.playing?emma:null);
     for(const stop of scenes.update(player.x,dt)){
@@ -585,31 +603,23 @@
     celebration=Math.max(0,celebration-dt);
     for(const spark of sparks){spark.x+=spark.vx*dt;spark.y+=spark.vy*dt;spark.vy+=500*dt;spark.life-=dt;}
     sparks=sparks.filter(spark=>spark.life>0);
-    const target=clamp(player.x-width*.35,0,WORLD-width);camera=reduced.matches?target:camera+(target-camera)*(1-Math.exp(-8*dt));
+    const endFrame=world.ending&&width>=600?world.ending.firstX-40:player.x-width*.55;
+    const target=clamp(endingReached?endFrame:player.x-width*.35,0,WORLD-width);camera=reduced.matches?target:camera+(target-camera)*(1-Math.exp(-8*dt));
     const verticalTarget=Math.max(0,Math.min(GROUND-height*.76,player.y-height*.38));
     cameraY=reduced.matches?verticalTarget:cameraY+(verticalTarget-cameraY)*(1-Math.exp(-7*dt));
     const area=Math.max(0,story.findLastIndex(s=>player.x>=s.start));
     if(area!==lastArea){lastArea=area;$('chapter').textContent=String(area+1).padStart(2,'0')+' / '+story[area].area.toUpperCase();$('section-jump').value=story[area].id;}
-    if(player.x>=world.finishX&&!visited.has('ending')){visited.add('ending');openStory(story.at(-1));}
     const progress=Math.round(clamp((player.x-world.spawnX)/(world.finishX-world.spawnX),0,1)*100);$('progress').style.width=progress+'%';document.querySelector('.progress').setAttribute('aria-valuenow',progress);
   }
   function loop(timestamp){const dt=Math.min((timestamp-previous)/1000||0,.04);previous=timestamp;if(!reduced.matches&&!document.hidden&&!timeline&&!dialog.open)time+=dt;update(dt);if(!timeline)draw();requestAnimationFrame(loop);}
   function jump(){if(running&&!timeline&&!dialog.open)jumpBuffer=.14;}
-  function openStory(s){
-    active=s;clearInput();visited.add(s.id);
-    $('dialog-counter').textContent=String(story.indexOf(s)+1).padStart(2,'0')+' / JOURNEY COMPLETE';
-    $('dialog-title').textContent=s.title;$('dialog-subtitle').textContent=s.subtitle;$('dialog-body').textContent=s.body;
-    $('dialog-highlights').replaceChildren(...s.highlights.map(value=>{const li=document.createElement('li');li.textContent=value;return li;}));
-    $('continue').textContent='Explore Again ↺';$('website').hidden=false;
-    $('ending-summary').textContent='Explain clearly. Make complexity understandable. Help others succeed. The people along the way carry those lessons into what we build next.';
-    dialog.showModal();beep('end');$('continue').focus();
-  }
   function closeStory(){dialog.close();clearInput();canvas.focus();}
   function start(){game.classList.toggle('entered',true);running=true;$('title-screen').hidden=true;clearInput();canvas.focus();beep('start');}
-  function restart(){game.classList.toggle('entered',false);closeStory();effects.clear();visited.clear();discoveries.clear();scenes.reset();cats.reset();emma=null;engineers.clear();sparks=[];bubbleStop=null;bubbleTier=0;celebration=0;coyote=.12;$('story-bubble').hidden=true;updateScore();player.x=world.spawnX;player.y=GROUND;player.vy=0;player.grounded=true;player.climbing=false;camera=0;cameraY=GROUND-height*.76;lastArea=-1;running=false;$('title-screen').hidden=false;$('chapter').textContent='01 / '+story[0].area.toUpperCase();$('progress').style.width='0%';document.querySelector('.progress').setAttribute('aria-valuenow',0);$('start').focus();resize();}
+  function restart(){endingReached=false;$('ending-link').hidden=true;game.classList.toggle('entered',false);closeStory();effects.clear();visited.clear();discoveries.clear();scenes.reset();cats.reset();emma=null;engineers.clear();sparks=[];bubbleStop=null;bubbleTier=0;celebration=0;coyote=.12;$('story-bubble').hidden=true;updateScore();player.x=world.spawnX;player.y=GROUND;player.vy=0;player.grounded=true;player.climbing=false;camera=0;cameraY=GROUND-height*.76;lastArea=-1;running=false;$('title-screen').hidden=false;$('chapter').textContent='01 / '+story[0].area.toUpperCase();$('progress').style.width='0%';document.querySelector('.progress').setAttribute('aria-valuenow',0);$('start').focus();resize();}
   function jumpToSection(index){
     const next=story[clamp(index,0,story.length-1)];
     if(dialog.open)closeStory();if(timeline)showTimeline(false);if(!running)start();
+    endingReached=false;$('ending-link').hidden=true;
     clearInput();player.x=next.start+70;player.y=GROUND;player.vy=0;player.grounded=true;
     camera=clamp(player.x-width*.35,0,WORLD-width);cameraY=GROUND-height*.76;
     $('story-bubble').hidden=true;lastArea=-1;$('section-jump').value=next.id;

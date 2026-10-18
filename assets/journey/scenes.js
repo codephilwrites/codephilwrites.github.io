@@ -204,7 +204,6 @@
             icon(callbacks[i],sx,G-135);
           }
           for(let i=0;i<7;i++)if(p>i/9)rect(x-220+i*65,G+2,57,9,'#c8af7e');
-          tag('TOGETHER, WHAT NEXT?',x,G-190);
           break;
         }
       }
@@ -214,13 +213,11 @@
     }
     function drawActors(stop){
       if(stop.event?.type!=='finale')return;
-      const x=stop.x,visited=world.sections.filter(s=>encountered.has(s.id)&&s!==stop);
-      const roles=visited.flatMap(s=>s.characters||[]).filter((c,i,all)=>all.findIndex(v=>v.name===c.name)===i);
-      const recalled=['Teacher','Engineer','Software','Customer'].map(name=>roles.find(c=>c.name===name)).filter(Boolean);
-      for(const c of roles)if(recalled.length<4&&!recalled.includes(c))recalled.push(c);
-      for(let i=0;i<recalled.length;i++){
-        const c=recalled[i],nx=x-160+i*100;
-        person(nx,G-4,1,false,c.color||'#9cb9a7',i);tag(c.name,nx,G-72);
+      if(world.ending?.stop!==stop)return;
+      for(let i=0;i<world.ending.cast.length;i++){
+        const c=world.ending.cast[i];
+        person(c.x,G,1,false,c.color||'#9cb9a7',i,false,c.outfit);
+        tag(c.name,c.x,G-92);
       }
     }
     return {states,encountered,update,collect,reset,progress,paletteAt,draw:drawScene,drawActors};

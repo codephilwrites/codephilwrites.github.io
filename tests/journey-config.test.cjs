@@ -65,3 +65,11 @@ const invalidStage=JSON.parse(JSON.stringify(config));invalidStage.sections[0].c
 assert.throws(()=>build(invalidStage),/stage/);
 const invalidTrigger=JSON.parse(JSON.stringify(config));invalidTrigger.sections[0].event.coinStage='choice';
 assert.throws(()=>build(invalidTrigger),/coinStage/);
+
+assert.ok(world.ending);
+assert.deepEqual(Array.from(world.ending.cast,c=>c.name),['Teacher','Engineer','Team Builder','Leader']);
+const lineup=[...world.ending.cast.map(c=>c.x),world.finishX];
+for(let i=1;i<lineup.length;i++)assert.equal(lineup[i]-lineup[i-1],100,'Ending cast and Phil have equal spacing');
+assert.equal(world.coins.at(-1).ending,true);assert.equal(world.coins.at(-1).x,world.finishX);
+const invalidCast=JSON.parse(JSON.stringify(config));invalidCast.sections.at(-1).ending.cast.pop();
+assert.throws(()=>build(invalidCast),/four named characters/);

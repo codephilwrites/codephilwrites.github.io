@@ -41,7 +41,8 @@
         const height=number(coin.height,defaultHeight,20,120,source.id+' coin height');
         return chunks(coin.text).map((body,part)=>({title:coin.title,body,height,stage:coin.stage,bonus:coin.bonus===undefined?!!source.optional:!!coin.bonus,action:part===0?coin.action:null,id:source.id+':coin:'+index+':'+part}));
       });
-      const length=Math.max(number(source.width,defaultWidth,650,10000,source.id+' width'),460+(entries.length-1)*minSpacing);
+      const isFinale=source===config.sections.at(-1)&&source.event?.type==='finale';
+      const length=Math.max(isFinale?Math.max(1050,2*((entries.length-1)*minSpacing-20)):0,number(source.width,defaultWidth,650,10000,source.id+' width'),460+(entries.length-1)*minSpacing);
       const start=cursor,end=start+length,playStart=start+340,playEnd=end-100;
       const stop={...source,start,end,width:length,x:(playStart+playEnd)/2,area:source.name,title:source.building.name,
         outfit:source.outfit||defaultOutfit,kind:source.scenery||'workshop',color:source.color||'#89b995',buildingX:start+150,
@@ -83,17 +84,30 @@
         return {stop,x:playStart+at*(playEnd-playStart-w),y:GROUND-rise,w,ladder:!!p.ladder||rise>110,tier:index+1};
       });
       platforms.push(...local);
+      const coinEnd=isFinale?stop.x+240:playEnd;
       for(let index=0;index<entries.length;index++){
         const beat=entries[index];
-        const x=entries.length===1?(playStart+playEnd)/2:playStart+(playEnd-playStart)*index/(entries.length-1);
+        const x=entries.length===1?(playStart+coinEnd)/2:playStart+(coinEnd-playStart)*index/(entries.length-1);
         const support=local.filter(p=>x>=p.x&&x<=p.x+p.w).sort((a,b)=>a.y-b.y)[0]||null;
         coins.push({stop,beat,action:beat.action,id:beat.id,tier:beat.bonus?1:0,height:beat.height,x,y:(support?support.y:GROUND)-beat.height,
-          airborne:beat.height>60,support});
+          airborne:beat.height>60,support,ending:isFinale&&index===entries.length-1});
       }
       cursor=end;
     }
     const last=sections.at(-1);
-    return {sections,platforms,coins,ground:GROUND,spawnX:START,worldWidth:cursor+200,finishX:last.end-60};
+    let ending=null;
+    if(last.event?.type==='finale'){
+      const fallback=[{name:'Teacher',outfit:'graduation'},{name:'Engineer',outfit:'casual'},{name:'Team Builder',outfit:'hoodie'},{name:'Leader',outfit:'suit'}];
+      const cast=last.ending?.cast||fallback,playerName=last.ending?.playerName||'Phil';
+      if(!Array.isArray(cast)||cast.length!==4||cast.some(c=>!c||typeof c.name!=='string'||!c.name.trim()||(c.outfit!==undefined&&!outfits.includes(c.outfit))))throw new Error('ending.cast needs four named characters with valid outfits.');
+      if(typeof playerName!=='string')throw new Error('ending.playerName must be text.');
+      const firstX=last.x-160,spacing=100,playerX=firstX+cast.length*spacing;
+      ending={stop:last,cast:cast.map((c,i)=>({...c,x:firstX+i*spacing})),firstX,spacing,playerX,playerName};
+      const finalCoin=coins.findLast(c=>c.stop===last);finalCoin.x=playerX;
+      const support=platforms.filter(p=>p.stop===last&&playerX>=p.x&&playerX<=p.x+p.w).sort((a,b)=>a.y-b.y)[0]||null;
+      finalCoin.support=support;finalCoin.y=(support?support.y:GROUND)-finalCoin.height;
+    }
+    return {sections,platforms,coins,ending,ground:GROUND,spawnX:START,worldWidth:cursor+200,finishX:ending?.playerX??last.end-60};
   }
   window.JourneyWorld={build,chunks};
   try{window.JOURNEY_WORLD=build(window.JOURNEY_CONFIG);window.JOURNEY_STORY=window.JOURNEY_WORLD.sections;}

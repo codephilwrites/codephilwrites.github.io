@@ -126,7 +126,7 @@ Use events with the matching scenery from the existing sections. They add decora
 
 Available `atmosphere` values are `morning`, `terminal`, `workshop`, `meadow`, `industrial`, `enterprise`, `dusk` and `horizon`. Colours transition between sections. Terminal scenery is enclosed; enterprise scenery has a skyline. HUD text automatically uses black or white for contrast during transitions.
 
-The main journey keeps narrative in story bubbles and section signs. Labels on the organisation web, governance boxes and Azure cloud explain those diagrams; terminal screens retain their configured display. Extra people and floating captions are hidden, except the coin-triggered leadership engineers, Emma in the personal section, and the callback ending. `characters` is optional metadata used by the callback ending only; each entry needs a `name` and can include a `color`. The ending retains its returning cast and labels.
+The main journey keeps narrative in story bubbles and section signs. Labels on the organisation web, governance boxes and Azure cloud explain those diagrams; terminal screens retain their configured display. Extra people and floating captions are hidden, except the coin-triggered leadership engineers, Emma in the personal section, and the callback ending. `characters` remains accepted as legacy metadata. The ending cast is now configured explicitly in the last section’s `ending.cast`, rather than choosing names from visited sections.
 
 Keep each coin to one memorable idea. The current journey uses fewer, shorter bubbles; the original longer copy is preserved in each section's optional **`details`** field for the timeline. Edit `details` too when changing the underlying facts, or omit it to let the timeline use the coin text instead.
 
@@ -163,7 +163,7 @@ Add `action: "meetCats"` to their coin to summon the cats when it is collected. 
 
 ## Presenting
 
-Start, then use ← → to move, Space to jump, and ↑ / ↓ to climb. Up also jumps away from ladders. Touch controls offer the same actions. Release a ladder to hold safely; there are no hazards or permanent falls. Coins reveal speech bubbles automatically; pause movement to read them. Reaching the far end opens the ending even if some coins were skipped.
+Start, then use ← → to move, Space to jump, and ↑ / ↓ to climb. Up also jumps away from ladders. Touch controls offer the same actions. Release a ladder to hold safely; there are no hazards or permanent falls. Coins reveal speech bubbles automatically; pause movement to read them. At the end, Phil stops one equal space after Teacher, Engineer, Team Builder and Leader. The last bubble appears automatically, even if earlier coins were skipped, and a right-pointing More about me link leads to the main site. The scene stays visible.
 
 **Present** requests fullscreen, with a layout fallback if fullscreen is unavailable. Use Escape or **Exit presentation** to leave it. **Restart** resets coins, events and effects. Sound starts off. **View journey as timeline** provides all the content without movement.
 
@@ -174,6 +174,12 @@ Presenter navigation is available without replaying the world:
 - The section selector and ◀ / ▶ buttons offer the same navigation on touchscreens.
 
 Navigation clears held movement, places Phil safely at the selected entrance, and retains collected coins and completed events. It hides the previous bubble until another coin is collected.
+
+## Ending lineup
+
+The final section’s `ending.cast` contains four entries with `name`, optional `outfit` and optional `color`. It currently reads Teacher, Engineer, Team Builder and Leader. Change these in `story.js` to rename or dress the figures. `ending.playerName` controls the label above Phil.
+
+The compiler places all five figures 100 game pixels apart. The final section’s last coin supplies the last bubble; it is revealed automatically at Phil’s stopping point, without a floating token or modal dialog. Earlier final-section coins remain normal pickups. The desktop camera frames the lineup, while narrow screens follow Phil and keep the invitation in view. Use Restart or presenter navigation to leave the stopping pose and explore again. The More about me link in `journey.html` uses Jekyll’s `relative_url` filter to point to the existing home/About Me page.
 
 ## Files and checks
 

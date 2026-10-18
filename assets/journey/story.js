@@ -694,6 +694,15 @@ window.JOURNEY_CONFIG = {
         "name": "The next level",
         "image": null
       },
+      "ending": {
+        "playerName": "Phil",
+        "cast": [
+          { "name": "Teacher", "outfit": "graduation", "color": "#bf8655" },
+          { "name": "Engineer", "outfit": "casual", "color": "#7ca9c8" },
+          { "name": "Team Builder", "outfit": "hoodie", "color": "#bd9fcb" },
+          { "name": "Leader", "outfit": "suit", "color": "#9cb9a7" }
+        ]
+      },
       "coins": [
         {
           "title": "What carries forward.",
