@@ -652,7 +652,6 @@ window.JOURNEY_CONFIG = {
           "height": 28,
           "bonus": true
         },
-       
         {
           "title": "Meet Emma.",
           "text": "This is Emma, my wife who has been a huge part of this journey and a massive influence on it.",
