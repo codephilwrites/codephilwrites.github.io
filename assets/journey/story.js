@@ -29,12 +29,12 @@ window.JOURNEY_CONFIG = {
       "coins": [
         {
           "title": "Engineering wasn’t where the journey started.",
-          "text": "I trained as a primary teacher with computing. Explaining clearly, adapting to an audience and developing people still guide how I lead.",
+          "text": "I trained as a primary teacher with computing. Following a passion of educating people and helping them develop themselves and their lives.",
           "height": 28
         },
         {
-          "title": "Different keyboard. Same instinct.",
-          "text": "Help someone else understand. Then let them have a go.",
+          "title": "Something wasn't right",
+          "text": "I discovered the passion to teach dwindle replaced by a passion for technology and building things.",
           "height": 102,
           "bonus": true
         }
@@ -95,8 +95,8 @@ window.JOURNEY_CONFIG = {
       },
       "coins": [
         {
-          "title": "From explaining technology to building it.",
-          "text": "I moved from explaining and selling technology to creating it. Understanding people still came first.",
+          "title": "A desire to be in tech but no way in.",
+          "text": "I took a job in people administration after university, here I taught myself to code and automated a large amount of my job.",
           "height": 28
         }
       ],
@@ -136,7 +136,7 @@ window.JOURNEY_CONFIG = {
       "coins": [
         {
           "title": "Curiosity became a craft.",
-          "text": "Build something. Learn from it. Share what you learned. Those lessons travelled with me.",
+          "text": "My early code was basic and unelegant but it taught me to solve complex business problems, utilising technology to make work easier.",
           "height": 28
         }
       ],
@@ -168,13 +168,18 @@ window.JOURNEY_CONFIG = {
       },
       "coins": [
         {
+          "title": "From coding to engineering.",
+          "text": "As a trainee engineer I was taught how to build solutions at enterprise scale and enterprise grade. My first project helped deliver the last package to your home address.",
+          "height": 98
+        },
+        {
           "title": "Engineering at national scale.",
           "text": "I helped establish Common Engineering and the strategy for a platform capability supporting approximately 300 engineers.",
           "height": 28
         },
         {
-          "title": "A platform that clears the way.",
-          "text": "Reusable accelerators and self-service Azure tooling helped teams deliver compliant cloud infrastructure without a queue at the platform team.",
+          "title": "A platform that accelerated delivery.",
+          "text": "Reusable accelerators and self-service Azure tooling helped teams deliver compliant cloud infrastructure without a queue for development teams.",
           "height": 102
         }
       ],
@@ -228,20 +233,20 @@ window.JOURNEY_CONFIG = {
       "coins": [
         {
           "stage": "challenge",
-          "title": "When every team has to wait.",
-          "text": "Teams needed compliant cloud infrastructure. If every request went through the platform team, that team became the queue.",
+          "title": "Good Governance Speeds Things Up.",
+          "text": "Through consistent frameworks, languages, designs and patterns it was easier to reuse code making delivery faster and operations easier.",
           "height": 28
         },
         {
           "stage": "choice",
           "title": "Build a path teams can use themselves.",
-          "text": "I chose reusable engineering accelerators and self-service Azure tooling, so teams could provision what they needed without waiting for a central team.",
+          "text": "I chose reusable engineering accelerators and self-service tooling, so teams could provision what they needed without waiting for a central team.",
           "height": 28
         },
         {
           "stage": "outcome",
           "title": "Build capability that lasts.",
-          "text": "The platform spanned 13 Azure subscriptions. I led seven engineers and built a Cloud Support community that became self-sustaining.",
+          "text": "The platform spanned mutliple locations and engineers. With only seven engineers I created community that became self-sustaining.",
           "height": 28
         }
       ],
@@ -303,7 +308,7 @@ window.JOURNEY_CONFIG = {
         {
           "stage": "outcome",
           "title": "Leave it easier to understand and operate.",
-          "text": "Simplifying the cloud estate made its connections clearer, with cost and reliability in view. I carried that lesson into consulting in regulated markets.",
+          "text": "Here I learnt to simplify the cloud estate and made its architecture clearer, with cost and reliability considered. I carried that lesson into consulting in regulated markets.",
           "height": 28
         }
       ],
@@ -339,19 +344,19 @@ window.JOURNEY_CONFIG = {
         {
           "stage": "challenge",
           "title": "A different view of engineering.",
-          "text": "As a consultant working in regulated markets, I was focused on code. Running a hackathon would change what interested me about engineering.",
+          "text": "As a consultant working in regulated markets, I went in with a desire to focus on code. However, Running a hackathon would change what interested me about engineering.",
           "height": 28
         },
         {
           "stage": "choice",
-          "title": "Bring around 90 engineers together.",
-          "text": "I ran a hackathon for around 90 engineers. Bringing people together to build became a turning point: I wanted to create the capability behind the code.",
+          "title": "Bringing around 90 engineers together.",
+          "text": "I ran a hackathon for around 90 engineers. Bringing people together to build became a turning point: I wanted to create the capability and culture behind the code.",
           "height": 28
         },
         {
           "stage": "outcome",
           "title": "From writing code to building capability.",
-          "text": "That experience shifted my interest towards building capabilities and technical teams, rather than being the person in the code.",
+          "text": "That experience shifted my interest towards building capabilities, culture and technical teams, rather than being the person in the code.",
           "height": 28
         }
       ],
@@ -377,12 +382,12 @@ window.JOURNEY_CONFIG = {
       "coins": [
         {
           "title": "From early engineer to a bigger landscape.",
-          "text": "I was one of the early engineers as the internal capability grew. Separate paths began connecting into a much larger engineering landscape.",
+          "text": "I had the opportunity to join at the start and shape how the internal capability grew. Separate paths began connecting into a much larger engineering landscape.",
           "height": 28
         },
         {
-          "title": "Different disciplines. Shared outcomes.",
-          "text": "Software, Quality, Data, AI/ML and Platform. Engineering across Retail, Clinical and Supply Chain.",
+          "title": "Different organisations. Shared outcomes.",
+          "text": "Our model benefits from ideas and input from lots of sources, software engineering is a subjective sport and Specsavers needed to define how it wanted engineering done.",
           "height": 102
         }
       ],
@@ -437,15 +442,9 @@ window.JOURNEY_CONFIG = {
       },
       "coins": [
         {
-          "title": "5,000+ repositories. Just a small collection.",
-          "text": "At this scale, shared expectations help engineers find a clear path through the landscape.",
+          "title": "5,000+ repositories.",
+          "text": "At this scale, defined expectations help engineers find a clear path through the landscape.",
           "height": 28
-        },
-        {
-          "title": "The README is probably at the bottom.",
-          "text": "No repositories were harmed in the making of this mountain.",
-          "height": 102,
-          "bonus": true
         }
       ],
       "platforms": [
@@ -603,7 +602,7 @@ window.JOURNEY_CONFIG = {
         },
         {
           "title": "One engineering ecosystem.",
-          "text": "Roughly 350 engineers across internal teams and strategic partners, working across Software, Quality, Data, AI/ML and Platform.",
+          "text": "Roughly 350 engineers across internal teams and strategic partners, working in Software delivering to the value streams.",
           "height": 102
         }
       ],
@@ -643,20 +642,27 @@ window.JOURNEY_CONFIG = {
       "coins": [
         {
           "title": "There is more than one kind of keyboard.",
-          "text": "Piano, musical theatre, history, hiking and Kansas City Chiefs football help me switch gears.",
+          "text": "I started learning piano a few years ago, after years of trying to teach myself I finally started taking lessions.",
           "height": 28,
           "bonus": true
         },
+ {
+          "title": "Things that aren't engineering",
+          "text": "Musical theatre, history, hiking and American Football help me switch gears.",
+          "height": 28,
+          "bonus": true
+        }
+       
         {
           "title": "Meet Emma.",
-          "text": "This is Emma — part of my life outside work.",
+          "text": "This is Emma, my wife who has been a huge part of this journey and a massive influence on it.",
           "height": 28,
           "bonus": true
         },
         {
           "title": "Maggie and Matilda.",
           "action": "meetCats",
-          "text": "A calico and a black cat. Heads of unscheduled interruptions. Neither has agreed to provide delivery estimates.",
+          "text": "2 cats I never thought I've have but bring so much joy into my life.",
           "height": 102,
           "bonus": true
         }
