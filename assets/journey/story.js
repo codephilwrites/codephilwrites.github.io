@@ -646,12 +646,12 @@ window.JOURNEY_CONFIG = {
           "height": 28,
           "bonus": true
         },
- {
+        {
           "title": "Things that aren't engineering",
           "text": "Musical theatre, history, hiking and American Football help me switch gears.",
           "height": 28,
           "bonus": true
-        }
+        },
        
         {
           "title": "Meet Emma.",
